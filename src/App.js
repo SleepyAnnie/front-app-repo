@@ -40,9 +40,9 @@ function App(props) {
   const [ data, setState ] = useState({outcome: []});
   const [query, setQuery] = useState('eks');
   const [search, setSearch] = useState('eks');
-
-  var url = 'http://k8s-eksdemogroup-e0353f9ab7-1066326594.ap-northeast-2.elb.amazonaws.com/contents/${search}'
-
+  
+  var url = 'http://k8s-eksdemogroup-e0353f9ab7-1066326594.ap-northeast-2.elb.amazonaws.com/contents/${search}';
+  
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(url);
